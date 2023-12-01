@@ -26,6 +26,15 @@
 			filter: none;
 		}
 	</style>
+	<!-- Estilo Tabla -->
+	<style type="text/css">
+		.tg  {border-collapse:collapse;border-color:#aaa;border-spacing:0;}
+		.tg td{background-color:#fff;border-color:#aaa;border-style:solid;border-width:0px;color:#333;
+		  font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+		.tg th{background-color:#f38630;border-color:#aaa;border-style:solid;border-width:0px;color:#fff;
+		  font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+		.tg .tg-u5z2{text-align:center;vertical-align:top}
+		</style>
 </head>
 
 <body>
@@ -63,6 +72,54 @@
 				</section>
 				<section data-auto-animate>
 					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
+					<h6 style="font-size: 50%;" id="data-title">Datos</h6>
+				</section>
+				<section data-auto-animate>
+					<h6 id="data-title">Datos</h6>
+					<p>📊</p>
+					<p style="font-size: medium;">Datos de más de 5000 puntos recopilados en distritos de la India a
+						través de encuestas. Se abordan factores como tipo de fertilizantes, cantidad de plántulas,
+						técnicas de riego, entre otros, que afectan el rendimiento del arroz. Cada punto de datos tiene
+						más de 40 características.</p>
+					<h5 style="font-size: medium;" id="project">Digital Green Crop Yield Estimate Challenge</h5>
+				</section>
+				<section data-auto-animate>
+					<h6 id="data-title">Datos</h6>
+					<table class="tg">
+						<thead>
+						  <tr>
+							<th class="tg-u5z2">Descripción</th>
+							<th class="tg-u5z2">Archivo</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td class="tg-u5z2">Este archivo describe las variables encontradas en los conjuntos de entrenamiento y prueba.</td>
+							<td class="tg-u5z2">VariableDescription.csv</td>
+						  </tr>
+						  <tr>
+							<td class="tg-u5z2">Es un ejemplo de cómo debería verse tu archivo de presentación. El orden de las filas no importa pero los nombres de las "ID" deben ser correctos.</td>
+							<td class="tg-u5z2">SampleSubmission.csv</td>
+						  </tr>
+						  <tr>
+							<td class="tg-u5z2">Train contiene el objetivo. Este es el conjunto de datos que utilizarás para entrenar tu modelo.</td>
+							<td class="tg-u5z2">Train.csv</td>
+						  </tr>
+						  <tr>
+							<td class="tg-u5z2">Test se asemeja a Train.csv pero sin las columnas relacionadas con el objetivo. Este es el conjunto de datos en el que aplicarás tu modelo.</td>
+							<td class="tg-u5z2"> Test.csv</td>
+						  </tr>
+						  <tr>
+							<td class="tg-u5z2">Este es un cuaderno inicial para ayudarte a realizar tu primera presentación.</td>
+							<td class="tg-u5z2"> DigitalGreen_Starter_Notebook.ipynb</td>
+						  </tr>
+						</tbody>
+						</table>
+					<p>📊</p>
+					<h5 style="font-size: medium;" id="project">Digital Green Crop Yield Estimate Challenge</h5>
+				</section>
+				<section data-auto-animate>
+					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
 					<h6 style="font-size: 50%;" id="eva-title">Evaluación</h6>
 				</section>
 				<section data-transition-speed="fast" data-auto-animate>
@@ -80,7 +137,7 @@
 					<pre><code data-noescape>
 						ID								Yield
 						ID_F9XXEXN2ADR2		437.9
-						ID_SO3VW2X4QO93		100.56		
+						ID_SO3VW2X4QO93		100.56
 					</code></pre>
 				</section>
 			</section>
@@ -89,12 +146,39 @@
 				<h1 class="fragment fade-in-then-semi-out" style="font-size: 60px;">Red Neuronal</h1>
 				<h1 class="fragment fade-in-then-semi-out" style="font-size: 60px;">Auto encoder</h1>
 			</section>
-			<section data-transition="zoom">
-				<section>
+			<section data-transition="zoom" data-auto-animate>
+				<section data-auto-animate>
 					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
-					
 				</section>
-			</section>			
+				<section data-auto-animate>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					<p id="text-acompaña">Librerías que usamos</p>
+				</section>
+				<section data-auto-animate>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					<pre><code data-trim data-line-numbers="1|2-5|7-11|12|13">
+						from google.colab import files
+						import numpy as np
+						import pandas as pd
+						import matplotlib.pyplot as plt
+						import seaborn as sns
+						%matplotlib inline
+						import sklearn
+						from sklearn.preprocessing import MinMaxScaler
+						from sklearn.impute import KNNImputer
+						from sklearn.model_selection import train_test_split
+						from sklearn.metrics import mean_squared_error, r2_score
+						import optuna
+						import xgboost as xgb
+					</code></pre>
+					<p id="text-acompaña">Librerías que usamos</p>
+				</section>
+				<section data-auto-animate>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					<p id="text-acompaña">Preparación de los datos</p>
+				</section>
+
+			</section>
 		</div>
 	</div>
 

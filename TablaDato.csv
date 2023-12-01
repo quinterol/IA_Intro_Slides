@@ -1,0 +1,6 @@
+Descripción,Archivo
+Este archivo describe las variables encontradas en los conjuntos de entrenamiento y prueba.,VariableDescription.csv 2.7 KB
+Es un ejemplo de cómo debería verse tu archivo de presentación. El orden de las filas no importa pero los nombres de las "ID" deben ser correctos.,SampleSubmission.csv 22.7 KB
+Train contiene el objetivo. Este es el conjunto de datos que utilizarás para entrenar tu modelo.,Train.csv 1.5 MB
+Test se asemeja a Train.csv pero sin las columnas relacionadas con el objetivo. Este es el conjunto de datos en el que aplicarás tu modelo., Test.csv 505.8 KB
+Este es un cuaderno inicial para ayudarte a realizar tu primera presentación., DigitalGreen_Starter_Notebook.ipynb 38.4 KB
