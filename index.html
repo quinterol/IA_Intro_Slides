@@ -28,13 +28,42 @@
 	</style>
 	<!-- Estilo Tabla -->
 	<style type="text/css">
-		.tg  {border-collapse:collapse;border-color:#aaa;border-spacing:0;}
-		.tg td{background-color:#fff;border-color:#aaa;border-style:solid;border-width:0px;color:#333;
-		  font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-		.tg th{background-color:#f38630;border-color:#aaa;border-style:solid;border-width:0px;color:#fff;
-		  font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-		.tg .tg-u5z2{text-align:center;vertical-align:top}
-		</style>
+		.tg {
+			border-collapse: collapse;
+			border-color: #aaa;
+			border-spacing: 0;
+		}
+
+		.tg td {
+			background-color: #fff;
+			border-color: #aaa;
+			border-style: solid;
+			border-width: 0px;
+			color: #333;
+			font-size: 14px;
+			overflow: hidden;
+			padding: 10px 5px;
+			word-break: normal;
+		}
+
+		.tg th {
+			background-color: #f38630;
+			border-color: #aaa;
+			border-style: solid;
+			border-width: 0px;
+			color: #fff;
+			font-size: 14px;
+			font-weight: normal;
+			overflow: hidden;
+			padding: 10px 5px;
+			word-break: normal;
+		}
+
+		.tg .tg-u5z2 {
+			text-align: center;
+			vertical-align: top
+		}
+	</style>
 </head>
 
 <body>
@@ -67,8 +96,10 @@
 				<section data-auto-animate>
 					<h2 data-id="emoji">🌱</h2>
 					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
-					<img width="200"
-						src="https://zindi-public-release.s3.eu-west-2.amazonaws.com/uploads/image_attachment/image/2015/683d3810-4d2f-475b-98b1-6e982573677a.png">
+					<a href="https://www.digitalgreen.org/india/">
+						<img width="200"
+							src="https://zindi-public-release.s3.eu-west-2.amazonaws.com/uploads/image_attachment/image/2015/683d3810-4d2f-475b-98b1-6e982573677a.png">
+					</a>
 				</section>
 				<section data-auto-animate>
 					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
@@ -87,34 +118,39 @@
 					<h6 id="data-title">Datos</h6>
 					<table class="tg">
 						<thead>
-						  <tr>
-							<th class="tg-u5z2">Descripción</th>
-							<th class="tg-u5z2">Archivo</th>
-						  </tr>
+							<tr>
+								<th class="tg-u5z2">Descripción</th>
+								<th class="tg-u5z2">Archivo</th>
+							</tr>
 						</thead>
 						<tbody>
-						  <tr>
-							<td class="tg-u5z2">Este archivo describe las variables encontradas en los conjuntos de entrenamiento y prueba.</td>
-							<td class="tg-u5z2">VariableDescription.csv</td>
-						  </tr>
-						  <tr>
-							<td class="tg-u5z2">Es un ejemplo de cómo debería verse tu archivo de presentación. El orden de las filas no importa pero los nombres de las "ID" deben ser correctos.</td>
-							<td class="tg-u5z2">SampleSubmission.csv</td>
-						  </tr>
-						  <tr>
-							<td class="tg-u5z2">Train contiene el objetivo. Este es el conjunto de datos que utilizarás para entrenar tu modelo.</td>
-							<td class="tg-u5z2">Train.csv</td>
-						  </tr>
-						  <tr>
-							<td class="tg-u5z2">Test se asemeja a Train.csv pero sin las columnas relacionadas con el objetivo. Este es el conjunto de datos en el que aplicarás tu modelo.</td>
-							<td class="tg-u5z2"> Test.csv</td>
-						  </tr>
-						  <tr>
-							<td class="tg-u5z2">Este es un cuaderno inicial para ayudarte a realizar tu primera presentación.</td>
-							<td class="tg-u5z2"> DigitalGreen_Starter_Notebook.ipynb</td>
-						  </tr>
+							<tr>
+								<td class="tg-u5z2">Este archivo describe las variables encontradas en los conjuntos de
+									entrenamiento y prueba.</td>
+								<td class="tg-u5z2">VariableDescription.csv</td>
+							</tr>
+							<tr>
+								<td class="tg-u5z2">Es un ejemplo de cómo debería verse tu archivo de presentación. El
+									orden de las filas no importa pero los nombres de las "ID" deben ser correctos.</td>
+								<td class="tg-u5z2">SampleSubmission.csv</td>
+							</tr>
+							<tr>
+								<td class="tg-u5z2">Train contiene el objetivo. Este es el conjunto de datos que
+									utilizarás para entrenar tu modelo.</td>
+								<td class="tg-u5z2">Train.csv</td>
+							</tr>
+							<tr>
+								<td class="tg-u5z2">Test se asemeja a Train.csv pero sin las columnas relacionadas con
+									el objetivo. Este es el conjunto de datos en el que aplicarás tu modelo.</td>
+								<td class="tg-u5z2"> Test.csv</td>
+							</tr>
+							<tr>
+								<td class="tg-u5z2">Este es un cuaderno inicial para ayudarte a realizar tu primera
+									presentación.</td>
+								<td class="tg-u5z2"> DigitalGreen_Starter_Notebook.ipynb</td>
+							</tr>
 						</tbody>
-						</table>
+					</table>
 					<p>📊</p>
 					<h5 style="font-size: medium;" id="project">Digital Green Crop Yield Estimate Challenge</h5>
 				</section>
@@ -134,7 +170,7 @@
 					<h6 id="eva-title">Evaluación</h6>
 					<h7 id="eva-title" style="font-size: medium;">Para cada fila del conjunto de datos, los archivos de
 						envío deben contener 2 columnas: ID y Destino.</h7>
-					<pre><code data-noescape>
+					<pre><code data-trim data-noescape>
 						ID								Yield
 						ID_F9XXEXN2ADR2		437.9
 						ID_SO3VW2X4QO93		100.56
@@ -155,7 +191,7 @@
 					<p id="text-acompaña">Librerías que usamos</p>
 				</section>
 				<section data-auto-animate>
-					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					<p id="text-acompaña">Librerías que usamos</p>
 					<pre><code data-trim data-line-numbers="1|2-5|7-11|12|13">
 						from google.colab import files
 						import numpy as np
@@ -171,13 +207,114 @@
 						import optuna
 						import xgboost as xgb
 					</code></pre>
-					<p id="text-acompaña">Librerías que usamos</p>
+					<h1 id="XGBoost" style="font-size: 30px;">XGBoost</h1>
+
 				</section>
 				<section data-auto-animate>
 					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
 					<p id="text-acompaña">Preparación de los datos</p>
 				</section>
-
+				<section data-auto-animate>
+					<p id="text-acompaña">Preparación de los datos</p>
+					<p style="font-size: 14px;" >Eliminación de los datos tipo string</p>
+					<pre style="font-size: 14px;"><code data-trim data-line-numbers="1-2|3-4">
+						archivo_ruta = '/content/drive/Shareddrives/Introducción IA /Train.csv'
+						datos = pd.read_csv(archivo_ruta)
+						columnas_string = datos.select_dtypes(include=['object']).columns
+						datos = datos.drop(columnas_string, axis=1)
+					</code></pre>
+					<h1 id="XGBoost" style="font-size: 30px;">XGBoost</h1>
+				</section>
+				<section data-auto-animate>
+					<p id="text-acompaña">Preparación de los datos</p>
+					<p style="font-size: 14px;" >Eliminamos características como:</p>
+					<ul style="font-size: 13px;">
+						<li class="fragment fade-in-then-semi-out">ID (Identificación)</li>
+						<li class="fragment fade-in-then-semi-out">District (Distrito)</li>
+						<li class="fragment fade-in-then-semi-out">Block (Bloque)</li>
+						<li class="fragment fade-in-then-semi-out">CropTillageDate (Fecha de Labranza del Cultivo)</li>
+						<li class="fragment fade-in-then-semi-out">CropEstMethod (Método de Estimación del Cultivo)</li>
+						<li class="fragment fade-in-then-semi-out">RcNursEstDate (Fecha de Estimación de la Cuna o Vivero)</li>
+						<li class="fragment fade-in-then-semi-out">SeedingSowingTransplanting (Siembra, Siembra Directa o Trasplante)</li>
+						<li class="fragment fade-in-then-semi-out">NursDetFactor (Factor de Detalle de la Cuna o Vivero)</li>
+						<li class="fragment fade-in-then-semi-out">TransDetFactor (Factor de Detalle de Transplante)</li>
+						<li class="fragment fade-in-then-semi-out">TransplantingIrrigationSource (Fuente de Riego para el Transplante)</li>
+						<li class="fragment fade-in-then-semi-out">TransplantingIrrigationPowerSource (Fuente de Energía para el Riego del Transplante)</li>
+						<li class="fragment fade-in-then-semi-out">OrgFertilizers (Fertilizantes Orgánicos)</li>
+						<li class="fragment fade-in-then-semi-out">PCropSolidOrgFertAppMethod (Método de Aplicación de Fertilizantes Orgánicos Sólidos al Cultivo Principal)</li>
+						<li class="fragment fade-in-then-semi-out">CropbasalFerts (Fertilizantes Basales del Cultivo)</li>
+						<li class="fragment fade-in-then-semi-out">MineralFertAppMethod (Método de Aplicación de Fertilizantes Minerales)</li>
+						<li class="fragment fade-in-then-semi-out">FirstTopDressFert (Primer Fertilizante de Cobertura)</li>
+						<li class="fragment fade-in-then-semi-out">MineralFertAppMethod.1 (Método de Aplicación de Fertilizantes Minerales - Segunda Mención)</li>
+						<li class="fragment fade-in-then-semi-out">Harv_method (Método de Cosecha)</li>
+						<li class="fragment fade-in-then-semi-out">Harv_date (Fecha de Cosecha)</li>
+						<li class="fragment fade-in-then-semi-out">Threshing_date (Fecha de Trilla)</li>
+						<li class="fragment fade-in-then-semi-out">Threshing_method (Método de Trilla)</li>
+						<li class="fragment fade-in-then-semi-out">Stubble_use (Uso de Rastrojo)</li>
+					  </ul>
+					<h1 id="XGBoost" style="font-size: 30px;">XGBoost</h1>
+				</section>
+				<section data-auto-animate>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					<p id="text-acompaña">Eliminación de outliers</p>
+				</section>
+				<section data-auto-animate>
+					<p id="text-acompaña">Eliminación de outliers</p>
+					<pre style="font-size: 14px;"><code data-trim data-line-numbers="1|2|3|4-6|7-8|9-11|12">
+						def remove_outliers_iqr(df):
+							df_no_outliers = pd.DataFrame()
+							for column in datos.columns:
+								Q1 = datos[column].quantile(0.25)
+								Q3 = datos[column].quantile(0.75)
+								IQR = Q3 - Q1
+								lower_bound = Q1 - 1.5 * IQR
+								upper_bound = Q3 + 1.5 * IQR
+								df_no_outliers_col = datos[(datos[column] >= lower_bound) & (datos[column] <= upper_bound)]
+								df = df_no_outliers_col
+								df = df_no_outliers_col
+						return df
+					</code></pre>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+				</section>
+				<section data-auto-animate>
+					<p style="font-size: small;" id="text-acompaña">Eliminación de outliers</p>
+					<p>Elimina aproximadamente el 6%</p>
+					<p class="fragment fade-in" style="font-size: 20px;">Son 3964 datos outliers</p>
+					<h1 style="font-size: small;" id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+				</section>
+				<section data-auto-animate>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					<p id="text-acompaña">Normalización de los datos</p>
+				</section>
+				<section data-auto-animate>
+					<p id="text-acompaña">Normalización de los datos</p>
+					<pre style="font-size: 14px;"><code data-trim data-line-numbers="1|2|3|4">
+						from sklearn.preprocessing import MinMaxScaler
+						columnas_a_normalizar = df_no_outliers.columns
+						scaler = MinMaxScaler()
+						df_no_outliers[columnas_a_normalizar] = scaler.fit_transform(df_no_outliers[columnas_a_normalizar])
+					</code></pre>
+					<h1 id="XGBoost" style="font-size: 30px;">XGBoost</h1>
+				</section>
+				<section data-auto-animate>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					<p id="text-acompaña">Imputación de vecinos más próximos</p>
+				</section>
+				<section data-auto-animate>
+					<p id="text-acompaña">Imputación de vecinos más próximos</p>
+					<pre style="font-size: 14px;"><code data-trim data-line-numbers="1|2-4|5-6|7-8">
+						from sklearn.impute import KNNImputer
+						umbral = 0.8
+						min_valores_no_nulos = len(df_no_outliers) * umbral
+						datos_umbral = df_no_outliers.dropna(thresh=min_valores_no_nulos, axis=1)
+						imputador = KNNImputer(n_neighbors=5)
+						datos_completos = imputador.fit_transform(datos_umbral)
+						columnas = datos_umbral.columns
+						datos_completos = pd.DataFrame(datos_completos, columns=columnas)
+					</code></pre>
+					<h1 id="XGBoost" style="font-size: 30px;">XGBoost</h1>					
+				</section>
+				
 			</section>
 		</div>
 	</div>
