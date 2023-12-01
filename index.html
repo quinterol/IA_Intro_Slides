@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Proyecto Final IA</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<!-- Favicon -->
+	<link rel="icon" href="favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<!-- Estilos -->
+	<style>
+		.fragment.blur {
+			filter: blur(5px);
+		}
+
+		.fragment.blur.visible {
+			filter: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="img/background.png">
+			</section>
+			<section data-auto-animate>
+				<section data-auto-animate>
+					<h2 data-id="emoji">🌱</h2>
+					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
+					<h8 style="font-size: 60%;">Desafío digital de estimación del rendimiento de cultivos verdes</h8>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="emoji">🌱</h2>
+					<p style="font-size: 40%; width: fit-content;">El objetivo de este desafío es crear una solución de
+						aprendizaje automático para predecir el rendimiento de cultivos por acre de arroz o trigo en
+						India. Nuestra meta es empoderar a estos agricultores y romper el ciclo de pobreza y
+						desnutrición.</p>
+					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
+					<aside class="notes">
+						Los agricultores de pequeña escala son contribuyentes fundamentales a la producción mundial de
+						alimentos y, en la India, a menudo son los más afectados por la pobreza y la desnutrición. Estos
+						agricultores enfrentan desafíos como el acceso limitado a la agricultura moderna, condiciones
+						climáticas impredecibles y restricciones de recursos. Para abordar este problema, Digital Green
+						recopiló datos a través de encuestas, proporcionando información sobre prácticas agrícolas,
+						condiciones ambientales y rendimientos de cultivos
+					</aside>
+				</section>
+				<section data-auto-animate>
+					<h2 data-id="emoji">🌱</h2>
+					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
+					<img width="200"
+						src="https://zindi-public-release.s3.eu-west-2.amazonaws.com/uploads/image_attachment/image/2015/683d3810-4d2f-475b-98b1-6e982573677a.png">
+				</section>
+				<section data-auto-animate>
+					<h5 id="project">Digital Green Crop Yield Estimate Challenge</h5>
+					<h6 style="font-size: 50%;" id="eva-title">Evaluación</h6>
+				</section>
+				<section data-transition-speed="fast" data-auto-animate>
+					<h6 id="eva-title">Evaluación</h6>
+					<h7 id="eva-title" style="font-size: medium;">La métrica de evaluación para esta competición es el
+						Error Cuadrático Medio Raíz (Root Mean Squared Error).</h7>
+					\[
+					\text{RMSE} = \sqrt{\sum_{i=1}^{n}\frac{(y_i - \hat{y}_i)^2}{n}}
+					\]
+				</section>
+				<section data-transition-speed="fast" data-auto-animate>
+					<h6 id="eva-title">Evaluación</h6>
+					<h7 id="eva-title" style="font-size: medium;">Para cada fila del conjunto de datos, los archivos de
+						envío deben contener 2 columnas: ID y Destino.</h7>
+					<pre><code data-noescape>
+						ID								Yield
+						ID_F9XXEXN2ADR2		437.9
+						ID_SO3VW2X4QO93		100.56		
+					</code></pre>
+				</section>
+			</section>
+			<section data-transition="zoom">
+				<h1 id="XGBoost" class="fragment fade-in-then-semi-out" style="font-size: 60px;">XGBoost</h1>
+				<h1 class="fragment fade-in-then-semi-out" style="font-size: 60px;">Red Neuronal</h1>
+				<h1 class="fragment fade-in-then-semi-out" style="font-size: 60px;">Auto encoder</h1>
+			</section>
+			<section data-transition="zoom">
+				<section>
+					<h1 id="XGBoost" style="font-size: 50px;">XGBoost</h1>
+					
+				</section>
+			</section>			
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+		});
+	</script>
+</body>
+
+</html>
